@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Service</title>
+</head>
+
+<body class="bg-gray-100">
+  <header class="bg-[#272727] text-white">
+    <div class="container mx-auto flex items-center justify-between px-4 py-3">
+      <button class="bg-[#FFFFFF1A] rounded px-4 py-2 text-white">
+        Logo
+      </button>
+      <div class="flex relative items-center w-2/3">
+        <input type="text" placeholder="Search what you need"
+          class="w-full px-4 py-2 rounded-lg text-black focus:outline-none" />
+        <select class="absolute right-2 bg-white text-black px-2 py-1 rounded">
+          <option>All</option>
+          <option>All</option>
+        </select>
+      </div>
+      <div class="hidden lg:flex items-center space-x-4">
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z" />
+          </svg>
+        </button>
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48">
+            <g fill="none">
+              <path fill="currentColor" d="M39 32H13L8 12h36z" />
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+                d="M3 6h3.5L8 12m0 0l5 20h26l5-20z" />
+              <circle cx="13" cy="39" r="3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="4" />
+              <circle cx="39" cy="39" r="3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                stroke-width="4" />
+            </g>
+          </svg>
+        </button>
+        <button>
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 72 72">
+            <path fill="currentColor"
+              d="M49.6 56c0-3.2-.4-4-3.9-4.3c-.6 0-1-.5-1-1.1V49c0-.4.2-.8.6-1c4.3-2.9 7.1-7.8 7.1-13.3l.1-.7c.1-.5.5-.9 1-1c1.4-.3 2.6-1.4 2.9-2.8c.4-2.1-1-3.9-2.9-4.3c-.3-.1-.5-.4-.5-.7l.4-6.4c.2-24.5-35.3-24.8-35.5-.4l.6 7c0 .3-.1.5-.4.6c-1.6.6-2.7 2.4-2.2 4.3c.3 1.3 1.6 2.2 3 2.6c.6.1 1 .6 1 1.2v.6c0 5.6 2.9 10.6 7.3 13.5c.2.1.3.3.3.5v2c0 .5-.4 1-1 1c-3.6.2-4 1.1-4.1 4.2c-.1.1-.2.3-.3.4c-6 2.5-10.4 6.1-10.2 14.8c0 .5.4.9 1 .9h46.2c.5 0 1-.4 1-.9c.1-8.7-4.1-12-10.1-14.6c-.1-.2-.2-.3-.4-.5" />
+          </svg>
+        </button>
+      </div>
+      <button id="menu-toggle" class="lg:hidden text-white focus:outline-none text-2xl">
+        ☰
+      </button>
+    </div>
+  </header>
+  <nav class="hidden lg:flex bg-white shadow-md">
+    <div class="container mx-auto flex justify-center space-x-8 py-2 text-gray-900">
+      <a href="service.html" class="bg-[#272727] text-white px-3 py-1 rounded">Service</a>
+      <a href="about.html" class="hover:text-black">About</a>
+      <a href="contact.html" class="hover:text-black">Contact</a>
+      <a href="index.html" class="hover:text-black">Sell your device</a>
+    </div>
+  </nav>
+  <div id="mobile-menu"
+    class="fixed top-0 left-0 w-64 h-full bg-white shadow-lg z-50 transform -translate-x-full transition-transform duration-300 ease-in-out">
+    <div class="flex justify-between items-center px-4 py-3 border-b">
+      <h2 class="text-lg font-semibold">Menu</h2>
+      <button id="close-menu" class="text-gray-700 text-xl">✕</button>
+    </div>
+    <div class="flex justify-center space-x-4 py-4 border-b">
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+          <path fill="currentColor"
+            d="m12 21.35l-1.45-1.32C5.4 15.36 2 12.27 2 8.5C2 5.41 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.08C13.09 3.81 14.76 3 16.5 3C19.58 3 22 5.41 22 8.5c0 3.77-3.4 6.86-8.55 11.53z" />
+        </svg>
+      </button>
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 48 48">
+          <g fill="none">
+            <path fill="currentColor" d="M39 32H13L8 12h36z" />
+            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4"
+              d="M3 6h3.5L8 12m0 0l5 20h26l5-20z" />
+            <circle cx="13" cy="39" r="3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="4" />
+            <circle cx="39" cy="39" r="3" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+              stroke-width="4" />
+          </g>
+        </svg>
+      </button>
+      <button>
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 72 72">
+          <path fill="currentColor"
+            d="M49.6 56c0-3.2-.4-4-3.9-4.3c-.6 0-1-.5-1-1.1V49c0-.4.2-.8.6-1c4.3-2.9 7.1-7.8 7.1-13.3l.1-.7c.1-.5.5-.9 1-1c1.4-.3 2.6-1.4 2.9-2.8c.4-2.1-1-3.9-2.9-4.3c-.3-.1-.5-.4-.5-.7l.4-6.4c.2-24.5-35.3-24.8-35.5-.4l.6 7c0 .3-.1.5-.4.6c-1.6.6-2.7 2.4-2.2 4.3c.3 1.3 1.6 2.2 3 2.6c.6.1 1 .6 1 1.2v.6c0 5.6 2.9 10.6 7.3 13.5c.2.1.3.3.3.5v2c0 .5-.4 1-1 1c-3.6.2-4 1.1-4.1 4.2c-.1.1-.2.3-.3.4c-6 2.5-10.4 6.1-10.2 14.8c0 .5.4.9 1 .9h46.2c.5 0 1-.4 1-.9c.1-8.7-4.1-12-10.1-14.6c-.1-.2-.2-.3-.4-.5" />
+        </svg>
+      </button>
+    </div>
+    <nav class="flex flex-col space-y-4 px-4 py-6 text-gray-900">
+      <a href="service.html" class="bg-[#272727] text-white px-3 py-1 rounded-lg w-max">Service</a>
+      <a href="about.html" class="hover:text-black">About</a>
+      <a href="contact.html" class="hover:text-black">Contact</a>
+      <a href="index.html" class="hover:text-black">Sell your device</a>
+    </nav>
+  </div>
+  <article class="relative bg-[#272727]">
+    <div class="w-[90%] py-10 text-white lg:w-[70%] mx-auto relative">
+      <h2 class="text-xl font-bold text-center mb-3">Service</h2>
+      <p class="text-sm">
+        Welcome to Adam’s Apple, Chicago’s go-to for convenient, reliable
+        Apple device services. Whether you're ready to sell, need a repair, or
+        just want expert advice, we make it easy by bringing our services
+        right to your doorstep. With a focus on customer satisfaction,
+        transparency, and quality, Adam’s Apple is here to simplify your tech
+        experience, offering top-dollar for devices you’re ready to part with
+        and fast, trusted repairs for the ones you’re not. Discover the easy
+        way to manage your Apple devices with us—where convenience meets
+        quality.
+      </p>
+    </div>
+  </article>
+  <div class="bg-[#F9F9F9] shadow">
+    <section class="px-0 lg:px-28">
+      <h2 class="text-2xl font-semibold px-6 pt-10 text-gray-900">
+        Sell Your Apple Device
+      </h2>
+      <div class="flex flex-col md:flex-row gap-6 px-6">
+        <div class="w-full lg:w-3/4">
+          <p class="mt-3">
+            Unlock the full potential of your Apple device with Adam! Our
+            hassle-free selling process makes it quick and easy for you to
+            turn your old gadgets into cash. We offer competitive prices
+            and a seamless experience, ensuring you get the best value for
+            your device. Join thousands of satisfied customers who have
+            successfully sold their devices with us. Don’t let your old
+            tech gather dust—transform it into cash today and enjoy the
+            benefits of upgrading to the latest Apple products!
+          </p>
+          <button class="bg-gray-800 hover:bg-gray-900 transition text-white px-4 py-2 rounded-md my-10">
+            Sell your device
+          </button>
+        </div>
+        <div class="md:w-2/4 2xl:w-1/4">
+          <img src="../assets/accounting.jpeg" alt="Macbook Image" class="mb-10 w-full rounded-2xl object-cover " />
+        </div>
+      </div>
+    </section>
+  </div>
+  <div class="bg-[#F9F9F9] shadow">
+    <section class="px-0 lg:px-28">
+      <h2 class="text-2xl font-semibold px-6 pt-10 text-gray-900">
+        Repair Your Device
+      </h2>
+      <div class="flex flex-col md:flex-row gap-6 px-6">
+        <div class="w-full lg:w-3/4">
+          <p class="mt-3">
+            At Adam, we understand how essential your Apple devices are to your daily life. That's why we offer
+            professional repair services to get your devices back in working order quickly and efficiently. Whether it's
+            a cracked screen, battery issues, or software problems, our expert technicians are here to help. Trust us to
+            use high-quality parts and ensure your device performs like new again. Choose Adam for reliable repairs and
+            exceptional customer service!
+          </p>
+          <button class="bg-gray-800 hover:bg-gray-900 transition text-white px-4 py-2 rounded-md my-10">
+            Repair your device
+          </button>
+        </div>
+        <div class="md:w-2/4 2xl:w-1/4">
+          <img src="../assets/phone.jpeg" alt="Macbook Image" class="mb-10 w-full rounded-2xl object-cover " />
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer class="bg-white lg:px-28 rounded py-5 shadow">
+    <div class="w-[90%] mx-auto">
+      <div class="flex gap-4 flex-wrap justify-around">
+        <div>
+          <div class="flex gap-3">
+            <input
+              class="bg-[#FAFAFA]  p-2 placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-0 focus-visible:ring-transparent focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 md:text-sm"
+              type="email" placeholder="user@example.com" />
+            <button class="bg-gray-700 hover:bg-gray-800 transition text-white text-sm rounded px-6 py-3">
+              Contact
+            </button>
+          </div>
+        </div>
+        <div class="flex lg:px-16 mt-10 md:mt-0 flex-wrap gap-5 lg:gap-20">
+          <div class="space-y-4 flex flex-col text-sm">
+            <h3 class="text-black text-lg font-semibold">Products</h3>
+            <a href="">Inventory</a>
+            <a href="">Sales</a>
+            <a href="">Purchases</a>
+            <a href="">Store</a>
+          </div>
+          <div class="space-y-4 flex flex-col text-sm">
+            <h3 class="text-black text-lg font-semibold">The compayn</h3>
+            <a href="">About</a>
+            <a href="">Our contact</a>
+          </div>
+          <div class="space-y-4 flex flex-col text-sm">
+            <h3 class="text-black text-lg font-semibold">Resources</h3>
+            <a href="">Online payment</a>
+            <a href="">Privacy policy</a>
+            <a href="">Terms & conditions</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="bg-[#272727] w-full">
+    <div class="w-full text-center">
+      <div class="text-white py-3">© adamtechnologyagency</div>
+    </div>
+  </div>
+  <script>
+    const menu = document.getElementById("mobile-menu");
+    const menuToggle = document.getElementById("menu-toggle");
+    const closeMenu = document.getElementById("close-menu");
+
+    menuToggle.addEventListener("click", () => {
+      menu.classList.remove("-translate-x-full");
+    });
+
+    closeMenu.addEventListener("click", () => {
+      menu.classList.add("-translate-x-full");
+    });
+  </script>
+</body>
+
+</html>
